@@ -1,0 +1,30 @@
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  transition: transform 0.5s, opacity 0.8s;
+}
+
+.desc {
+  grid-column: 2/3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 2rem;
+}
+
+.desc h3 {
+  color: var(--color-primary-accent);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}

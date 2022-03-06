@@ -1,0 +1,22 @@
+.social-link {
+  display: flex;
+  align-items: center;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.social-link a {
+  text-decoration: none;
+  color: var(--color-primary-accent);
+  border-bottom: 1px solid transparent;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.social-link a:hover {
+  border-color: var(--color-primary-accent);
+}

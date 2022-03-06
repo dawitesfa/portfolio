@@ -1,0 +1,5 @@
+.sub-heading {
+  color: var(--color-primary-text);
+  padding: 1rem 0;
+  text-transform: capitalize;
+}

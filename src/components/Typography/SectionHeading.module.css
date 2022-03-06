@@ -1,0 +1,18 @@
+.sec-heading {
+  padding: 1rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-text),
+    var(--color-primary-accent)
+  );
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.sec-heading:hover {
+  text-shadow: 0.25rem 1rem 2rem white;
+  transform: scale(1.05) skewX(-12deg) translateY(-0.3rem);
+}

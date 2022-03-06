@@ -1,0 +1,19 @@
+.arrow {
+  width: 4rem;
+  height: 4rem;
+  background-color: #00acb5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.5s;
+  font-size: 2.4rem;
+  opacity: 0.2;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.arrow:hover {
+  opacity: 0.5;
+}

@@ -1,0 +1,10 @@
+.section-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 2rem;
+}
+
+.section-skills:not(:last-child) {
+  margin-bottom: 2rem;
+}

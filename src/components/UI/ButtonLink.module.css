@@ -1,0 +1,33 @@
+.btn-link {
+  position: relative;
+  background-color: var(--color-primary-accent);
+  padding: 0.5rem 2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: var(--color-primary-bg);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-link::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: rgb(182, 179, 179);
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-link:hover {
+  color: var(--color-primary);
+}
+
+.btn-link:hover::after {
+  transform: scale(1.2, 1.5);
+  opacity: 0;
+}

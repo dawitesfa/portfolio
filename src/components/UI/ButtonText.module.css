@@ -1,0 +1,21 @@
+.btn-txt {
+  color: var(--color-primary-accent);
+  display: inline-block;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-txt:hover {
+  letter-spacing: 0.1rem;
+  border-color: var(--color-primary-accent);
+  text-shadow: 0rem 0.5rem 1rem rgba(255, 255, 255, 0.4);
+}
+
+.btn-txt:active {
+  letter-spacing: 0;
+}

@@ -1,0 +1,10 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.centered {
+  text-align: center;
+}
