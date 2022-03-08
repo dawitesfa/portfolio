@@ -20,6 +20,7 @@ button,
 a,
 li,
 ul,
+textarea,
 ::after,
 ::before,
 ::placeholder,
@@ -32,9 +33,11 @@ ul,
   vertical-align: baseline;
   background-color: transparent;
   background-size: cover;
+  resize: none;
 }
 
 :root {
+  /* colors */
   --color-primary: #222831;
   --color-primary-bg: #393e46;
   --color-primary-accent: #00adb5;

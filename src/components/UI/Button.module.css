@@ -14,3 +14,8 @@
   color: rgb(56, 48, 48);
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
+
+.btn:disabled {
+  background-color: var(--color-primary-bg);
+  color: grey;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import AppContextProvider from './store/AppContextProvider';
 import MePic from './assets/index.jpeg';
 import Icn1 from './assets/js.png';
 import Icn2 from './assets/html.png';
@@ -21,7 +22,9 @@ export { ProImg1, ProImg2, ProImg3 };
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppContextProvider>
+      <App />
+    </AppContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

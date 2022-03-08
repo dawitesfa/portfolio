@@ -50,16 +50,16 @@
   width: 100%;
   grid-column: 2/3;
 }
-.name span,
+/* .name span,
 .pro span {
   position: relative;
   z-index: 99;
   padding: 0.25rem 0.5rem;
   font-weight: 500;
   color: var(--color-primary-accent);
-}
+} */
 
-.name-container span::after {
+/* .name-container span::after {
   content: '';
   background-color: var(--color-primary);
   height: 100%;
@@ -69,7 +69,7 @@
   left: 0;
   z-index: -99;
   transform: skewX(-12deg);
-}
+} */
 
 .link {
   margin: 2rem 0;

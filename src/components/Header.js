@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import useOnScreen from '../hooks/on-screen';
 import { MePic } from '../index';
 import ButtonLink from './UI/ButtonLink';
+import TextHighlight from './Typography/TextHighlight';
 
 const Header = () => {
   const [headerRef, visible] = useOnScreen({
@@ -19,10 +20,23 @@ const Header = () => {
         </div>
         <div className={classes['name-container']}>
           <h1 className={classes.name}>
-            Dawit <span>Tesfamariam</span>
+            Dawit{' '}
+            <TextHighlight
+              textColor='var(--color-primary-accent)'
+              style={{ backgroundColor: 'var(--color-primary)' }}
+            >
+              Tesfamariam
+            </TextHighlight>
           </h1>
           <p className={classes.pro}>
-            a <span>frontend</span> web developer
+            a{' '}
+            <TextHighlight
+              textColor='var(--color-primary-accent)'
+              style={{ backgroundColor: 'var(--color-primary)' }}
+            >
+              frontend
+            </TextHighlight>{' '}
+            web developer
           </p>
         </div>
         <div className={classes['desc-wrapper']}>

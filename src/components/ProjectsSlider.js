@@ -64,6 +64,7 @@ const ProjectsSlider = (props) => {
         {projects().map((_, i) => {
           return (
             <Dot
+              key={`dot-${i}`}
               style={{ opacity: counter === i && '0.75' }}
               onClick={() => {
                 setCounter(i);
