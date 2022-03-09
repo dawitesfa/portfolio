@@ -1,7 +1,6 @@
 import classes from './Social.module.css';
 import { socials } from '../data/Data';
 import SocialLink from './SocialLink';
-import Button from './UI/Button';
 
 const Social = (props) => {
   return (
@@ -17,7 +16,7 @@ const Social = (props) => {
           />
         ))}
       </ul>
-      <Button>Contact me</Button>
+      {/* <Button>Contact me</Button> */}
     </div>
   );
 };

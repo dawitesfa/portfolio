@@ -11,6 +11,7 @@
   text-decoration: none;
   color: var(--color-primary-accent);
   border-bottom: 1px solid transparent;
+  transition: all 0.5s;
 }
 
 .icon {

@@ -1,5 +1,14 @@
 .projects {
-  height: var(--dim-projects-sec-height);
   width: 100%;
   margin-top: 3rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-container i {
+  font-size: 2.4rem;
+  color: var(--color-primary-accent);
 }
