@@ -25,7 +25,7 @@ const SkillCard = (props) => {
             );
           })}
         </ul>
-        <p className={classes['skill-desc']}>{props.skillDesc}</p>
+        {/* <p className={classes['skill-desc']}>{props.skillDesc}</p> */}
       </div>
     </Card>
   );

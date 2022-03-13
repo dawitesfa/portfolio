@@ -18,13 +18,6 @@
   background-color: var(--color-primary-bg);
   line-height: 1.7;
 }
-.skill-detail::before {
-  content: '';
-  display: block;
-  height: 1px;
-  background-color: var(--color-primary-accent);
-  width: 100%;
-}
 .rate {
   list-style: none;
   display: flex;
