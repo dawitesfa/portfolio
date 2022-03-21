@@ -92,9 +92,3 @@ code {
     font-size: 56.25%;
   }
 }
-
-@media (max-width: 37.5em) {
-  html {
-    font-size: 50%;
-  }
-}
