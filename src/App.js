@@ -25,7 +25,9 @@ const App = () => {
       {appCtx.show &&
         ReactDOM.createPortal(modal, document.getElementById('modal-root'))}
       <Header />
+      <hr />
       <Skills id='section-1' />
+      <hr />
       <Projects id='section-2' />
       <Footer />
     </>

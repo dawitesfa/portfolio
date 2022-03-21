@@ -3,7 +3,7 @@ import classes from './Projects.module.css';
 import SectionHeading from './Typography/SectionHeading';
 import SectionWrapper from './UI/SectionWrapper';
 import ProjectsSlider from './ProjectsSlider';
-import ProjectsGrid from './ProjectsGrid';
+// import ProjectsGrid from './ProjectsGrid';
 
 const Projects = (props) => {
   // const [isGrid, setIsGrid] = useState(false);
