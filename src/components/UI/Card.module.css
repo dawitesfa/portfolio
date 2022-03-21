@@ -4,3 +4,10 @@
   border-radius: 4px;
   overflow: hidden;
 }
+
+@media (max-width: 37.5em) {
+  .card {
+    box-shadow: none;
+    border: 1px solid var(--color-primary-accent);
+  }
+}

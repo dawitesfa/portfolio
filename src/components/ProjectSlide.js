@@ -6,9 +6,7 @@ const ProjectSlide = (props) => {
     <div
       className={classes['slide']}
       style={{
-        backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.85) 50%),url(${props.imgUrl})`,
-        // transform: `${props.translate} ${props.scale}`,
-        // opacity: props.opacity,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.3) ,rgba(0,0,0,0.3) ),url(${props.imgUrl})`,
         ...props.style,
       }}
     >
@@ -25,7 +23,7 @@ const ProjectSlide = (props) => {
             Demo
           </ButtonLink>
           <ButtonLink anchor={{ href: props.gitUrl, target: '_blank' }}>
-            Source Code
+            Code
           </ButtonLink>
         </div>
       </div>

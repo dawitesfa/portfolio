@@ -60,3 +60,15 @@
   right: 1.6rem;
   z-index: 999;
 }
+
+@media (max-width: 37.5em) {
+  .menu {
+    display: block;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+  }
+  .desc-wrapper {
+    grid-column: 1/2;
+  }
+}

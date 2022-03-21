@@ -12,26 +12,59 @@
 }
 
 .skill-detail {
-  width: 100%;
   text-align: center;
   padding: 1rem;
   background-color: var(--color-primary-bg);
-  line-height: 1.7;
+}
+
+.skill-detail h3 {
+  margin-bottom: 0;
 }
 .rate {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 0.5rem;
+  padding: 0;
+}
+
+.rate:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .rate li {
   font-size: 2.2rem;
 }
 
-.skill-desc {
-  color: var(--color-primary-accent);
-  line-height: 1.3;
-  font-size: 1.2rem;
+@media (max-width: 37.5em) {
+  .skill-card {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  .icon {
+    height: 5rem;
+    border-radius: 1rem;
+  }
+
+  .skill-detail {
+    text-align: start;
+    padding: 1rem;
+    background-color: var(--color-primary-bg);
+  }
+
+  .skill-name {
+    text-transform: uppercase;
+  }
+
+  .rate {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .rate li {
+    font-size: 3.2rem;
+  }
 }

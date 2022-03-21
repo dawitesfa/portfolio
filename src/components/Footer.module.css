@@ -2,3 +2,9 @@
   background-color: var(--color-primary);
   color: var(--color-primary-accent);
 }
+
+.footer small {
+  display: block;
+  text-align: center;
+  color: #ffffff4b;
+}

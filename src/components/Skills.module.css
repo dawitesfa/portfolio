@@ -8,3 +8,16 @@
 .section-skills:not(:last-child) {
   margin-bottom: 2rem;
 }
+
+@media (max-width: 56.25em) {
+  .section-skills {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .section-skills {
+    grid-template-columns: 1fr;
+    padding: 0 1.6rem;
+  }
+}

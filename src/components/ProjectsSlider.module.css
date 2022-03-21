@@ -17,6 +17,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 99;
 }
 
 .arrows-left {
@@ -32,4 +33,10 @@
   padding: 2rem 0;
   gap: 0.5rem;
   list-style: none;
+}
+
+@media (max-width: 37.5em) {
+  .slider {
+    width: 100%;
+  }
 }

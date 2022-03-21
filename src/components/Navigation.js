@@ -1,17 +1,21 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import classes from './Navigation.module.css';
 import NavItem from './NavItem';
 import { navItems } from '../data/Data';
 import Button from './UI/Button';
 import AppContext from '../store/app-context';
 
-const Navigation = ({ visible }) => {
+const Navigation = ({ visible, style }) => {
   const appCtx = useContext(AppContext);
   const onShowModalHandler = (e) => {
     appCtx.showModal(true);
   };
+
   return (
-    <nav className={`${classes['nav']} ${!visible && classes.float}`}>
+    <nav
+      className={`${classes['nav']} ${!visible && classes.float} `}
+      style={{ zIndex: '9999', ...style }}
+    >
       <h1>DT</h1>
       <ul>
         {navItems().map((item) => {
@@ -22,7 +26,10 @@ const Navigation = ({ visible }) => {
           );
         })}
       </ul>
-      <Button onClick={onShowModalHandler}>Contact me</Button>
+      <Button className={classes.btn} onClick={onShowModalHandler}>
+        Contact me
+      </Button>
+      <Button className={classes.menu}>=</Button>
     </nav>
   );
 };

@@ -6,26 +6,27 @@ import ProjectsSlider from './ProjectsSlider';
 import ProjectsGrid from './ProjectsGrid';
 
 const Projects = (props) => {
-  const [isGrid, setIsGrid] = useState(false);
-  const onGridToggleHandler = (e) => {
-    setIsGrid((prev) => !prev);
-  };
+  // const [isGrid, setIsGrid] = useState(false);
+  // const onGridToggleHandler = (e) => {
+  //   setIsGrid((prev) => !prev);
+  // };
   return (
     <SectionWrapper id={props.id}>
       <div className={classes.heading}>
         <SectionHeading>Projects</SectionHeading>
-        <div
+        {/* <div
           onClick={onGridToggleHandler}
           className={classes['icon-container']}
         >
           <span>view as → </span>
-          {isGrid && <i class='bi bi-file-earmark-slides'></i>}
-          {!isGrid && <i class='bi bi-grid'></i>}
-        </div>
+          {isGrid && <i className='bi bi-file-earmark-slides'></i>}
+          {!isGrid && <i className='bi bi-grid'></i>}
+        </div> */}
       </div>
       <div className={classes.projects}>
-        {!isGrid && <ProjectsSlider />}
-        {isGrid && <ProjectsGrid />}
+        {/* {!isGrid && <ProjectsSlider />}
+        {isGrid && <ProjectsGrid />} */}
+        <ProjectsSlider />
       </div>
     </SectionWrapper>
   );

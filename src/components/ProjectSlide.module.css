@@ -9,6 +9,8 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
   transition: transform 0.5s, opacity 0.8s;
+  background-size: cover;
+  background-position: center;
 }
 
 .desc {
@@ -17,7 +19,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-right: 2rem;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .desc h3 {
@@ -27,4 +30,51 @@
 .links {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 56.25em) {
+  .slide {
+    display: block;
+    background-position: bottom;
+  }
+  .desc {
+    display: grid;
+    grid-template-columns: 1fr 15rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .desc h3 {
+    grid-column: 1 / 3;
+    margin: 0;
+    padding: 0;
+  }
+  .desc p {
+    margin: 0;
+    padding: 0;
+  }
+  .links {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .desc {
+    display: grid;
+    grid-template-columns: 1fr 7rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    align-items: flex-start;
+  }
 }

@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+import { useState } from 'react';
 import classes from './Header.module.css';
 import Navigation from './Navigation';
 import useOnScreen from '../hooks/on-screen';
@@ -6,6 +7,7 @@ import { MePic } from '../index';
 import ButtonLink from './UI/ButtonLink';
 import TextHighlight from './Typography/TextHighlight';
 import ButtonSlide from './UI/ButtonSlide';
+import MenuBtn from './UI/MenuBtn';
 
 const Header = () => {
   const [headerRef, visible] = useOnScreen({
@@ -21,10 +23,24 @@ const Header = () => {
       ↑
     </ButtonSlide>
   );
+  const [navVisible, setNavVisible] = useState(false);
+  // const toggleVisible = () => {
+  //   setNavVisible((prev) => !prev);
+  // };
+  const onMenuClick = (vis) => {
+    setNavVisible((prev) => !prev);
+  };
   return (
     <>
+      <MenuBtn menuClick={onMenuClick}></MenuBtn>
       <header ref={headerRef} className={classes.header} id='home'>
-        <Navigation visible={visible} />
+        <Navigation
+          style={{
+            opacity: navVisible && '1',
+            visibility: navVisible && 'visible',
+          }}
+          visible={visible}
+        />
         <div className={classes['header-content']}>
           <div className={classes['pic-container']}>
             <img src={MePic} alt='Profile' />

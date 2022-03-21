@@ -9,7 +9,7 @@ const Skills = (props) => {
   return (
     <SectionWrapper id={props.id}>
       <SectionHeading>Skills</SectionHeading>
-      <SubHeading>Skills that are mastered</SubHeading>
+      <SubHeading>Skills | acquired</SubHeading>
       <div className={classes['section-skills']}>
         {skillCards().map((skill) => {
           return (
@@ -25,7 +25,7 @@ const Skills = (props) => {
         })}
       </div>
 
-      <SubHeading>Skills now learning</SubHeading>
+      <SubHeading>Skills | learning</SubHeading>
       <div className={classes['section-skills']}>
         {skillLearning().map((skill) => {
           return (
